@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TickLinks — Background Process Dashboard</title>
+  <link rel="stylesheet" href="assets/dashboard.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <strong>TICKLINKS</strong>
+      <span>Background processes</span>
+    </div>
+    <nav class="nav">
+      <button type="button" class="active" data-view="jobs">Recurring jobs</button>
+      <button type="button" id="nav-queue" data-view="queue">User-triggered queue</button>
+      <button type="button" data-view="runs">Recent runs</button>
+    </nav>
+    <div class="side-meta" id="side-meta"></div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <h1 id="page-title">Process health</h1>
+      </div>
+      <div class="top-actions">
+        <span class="badge ro">Read only</span>
+        <span class="clock" id="clock"></span>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="kpis" id="kpis"></section>
+      <section class="panel day-panel" id="days" hidden></section>
+      <section class="panel" id="view"></section>
+    </main>
+  </div>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true"></aside>
+
+  <script src="assets/format.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/history.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job history — TickLinks</title>
+  <link rel="stylesheet" href="assets/dashboard.css" />
+</head>
+<body class="job-page">
+  <aside class="sidebar">
+    <div class="brand">
+      <strong>TICKLINKS</strong>
+      <span>Background processes</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Recurring jobs</a>
+      <a id="nav-queue" href="index.html#queue">User-triggered queue</a>
+      <a class="active" href="#">This job · 10 days</a>
+    </nav>
+    <div class="side-meta" id="side-meta"></div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div>
+        <a class="back-link" href="index.html">All jobs</a>
+        <h1 id="page-title">Job history</h1>
+        <div class="muted" id="page-sub"></div>
+      </div>
+      <div class="top-actions">
+        <span class="badge ro">Read only · 10-day retention</span>
+        <span class="clock" id="clock"></span>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="kpis" id="kpis"></section>
+      <section class="panel day-panel" id="days"></section>
+      <section class="panel" id="view"></section>
+    </main>
+  </div>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true"></aside>
+
+  <script src="assets/format.js"></script>
+  <script src="assets/data.js"></script>
+  <script src="assets/history.js"></script>
+  <script src="assets/job.js"></script>
+</body>
+</html>
