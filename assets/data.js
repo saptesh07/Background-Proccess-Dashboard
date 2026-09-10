@@ -1,6 +1,6 @@
 /* Hardcoded design data — mirrors DailySchedulars Hangfire jobs + HangfireJobStepLog. */
 window.DASHBOARD_DATA = {
-  showUserTriggeredQueue: false,
+  showUserTriggeredQueue: true,
   generatedAt: "2026-09-09T16:56:00+05:30",
   timezone: "India Standard Time",
   server: "DailySchedulars",
